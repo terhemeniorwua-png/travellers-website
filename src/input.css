@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root:{
+    --bg-lemon:#FFF1DA;
+}
+body{
+    background-image: url(../image/Decore.png);
+    background-color: var(--bg-lemon);
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding-left: 10%;
+    padding-right: 10%;
+    object-fit: cover;
+}
+h4{
+    color: rgb(250, 90, 90);
+    font-weight: 600;
+}
+h1{
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1em;
+    color: #000000ce;
+}
+.button{
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1em;
+    height: 3em;
+}
