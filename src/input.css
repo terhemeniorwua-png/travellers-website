@@ -73,7 +73,7 @@ h4{
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: #e0e2f8;
+    box-shadow: 5px 5px 5px #e0e2f836;
     /* background-color: rgba(0, 0, 255, 0.406); */
 }
 .cardText{
@@ -83,6 +83,8 @@ h4{
     background-color: white;
     padding-bottom: 7%;
     padding-top: 7%;
+    text-align: left;
+    box-shadow: -2px 0px 30px;
     
 }
 .paddingcity{
@@ -93,12 +95,13 @@ h4{
     background-color: white;
     padding: 2%;
     border-radius: 1.5em;
-    line-height: 30px;
+    line-height: 25px;
+    box-shadow: 2px 0px 20px #5E6282;
+
 }
 .subscrib{
     background-image: url(../image/spiral-bg.png);
     background-position: center;
     text-align: center;
-    
     width:100%;
 }
