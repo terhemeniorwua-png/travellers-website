@@ -14,7 +14,7 @@
 }
 body{
     background-image: url(../image/Decore.png);
-    background-color: var(--bg-lemon);
+    background-color: #FFF1DA;
     background-repeat: no-repeat;
     background-position: top right;
     padding-left: 10%;
@@ -32,7 +32,7 @@ h1{
     font-family: var(--font-volkhov);
 }
 h2{
-    color: #1E1D4C;
+    color: #5E6282;
     font-weight:700;
 }
 h4{
@@ -84,4 +84,14 @@ h4{
     padding-bottom: 7%;
     padding-top: 7%;
     
+}
+.paddingcity{
+    padding-top: 5%;
+
+}
+.celeCard{
+    background-color: white;
+    padding: 2%;
+    border-radius: 1.5em;
+    line-height: 30px;
 }
