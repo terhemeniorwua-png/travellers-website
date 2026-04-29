@@ -65,7 +65,7 @@ h4{
     -webkit-mask-image: radial-gradient(circle at top right, transparent 85px, black 51px);
     position: relative;
     left: 70%;
-    bottom: 70%;
+    bottom: 40%;
 }
 .cityCard{
     width: 100%;
@@ -78,13 +78,14 @@ h4{
 }
 .cardText{
     position: relative;
-    bottom: 5em;
-    width: 65%;
+    bottom: 8em;
+    width: 19.8em;
     background-color: white;
-    padding-bottom: 7%;
-    padding-top: 7%;
+    padding-bottom: 11%;
+    padding-top: 10%;
     text-align: left;
-    box-shadow: -2px 0px 30px;
+    border-radius: 0.1em;
+    box-shadow: -2px 0px 200px rgba(128, 128, 128, 0.325);
     
 }
 .paddingcity{
@@ -96,7 +97,7 @@ h4{
     padding: 2%;
     border-radius: 1.5em;
     line-height: 25px;
-    box-shadow: 2px 0px 20px #5E6282;
+    box-shadow: -2px 0px 20px #32e3c6;
 
 }
 .subscrib{
@@ -104,4 +105,8 @@ h4{
     background-position: center;
     text-align: center;
     width:100%;
+    background-color: rgb(222, 220, 220);
+}
+.editWidth{
+    width: 22.7em;
 }
