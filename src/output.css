@@ -10,6 +10,7 @@
     --spacing: 0.25rem;
     --font-weight-medium: 500;
     --radius-lg: 0.5rem;
+    --radius-3xl: 1.5rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-poppins: 'Poppins', sans-serif;
@@ -165,11 +166,32 @@
   }
 }
 @layer utilities {
+  .relative {
+    position: relative;
+  }
+  .top-32 {
+    top: calc(var(--spacing) * 32);
+  }
+  .right-10 {
+    right: calc(var(--spacing) * 10);
+  }
+  .right-\[3\.858em\] {
+    right: 3.858em;
+  }
+  .z-20 {
+    z-index: 20;
+  }
+  .z-50 {
+    z-index: 50;
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
   .mb-7 {
     margin-bottom: calc(var(--spacing) * 7);
+  }
+  .mb-24 {
+    margin-bottom: calc(var(--spacing) * 24);
   }
   .flex {
     display: flex;
@@ -184,6 +206,10 @@
   .size-16 {
     width: calc(var(--spacing) * 16);
     height: calc(var(--spacing) * 16);
+  }
+  .size-60 {
+    width: calc(var(--spacing) * 60);
+    height: calc(var(--spacing) * 60);
   }
   .h-150 {
     height: calc(var(--spacing) * 150);
@@ -200,6 +226,9 @@
   .items-center {
     align-items: center;
   }
+  .justify-around {
+    justify-content: space-around;
+  }
   .justify-between {
     justify-content: space-between;
   }
@@ -209,8 +238,14 @@
   .justify-start {
     justify-content: flex-start;
   }
+  .gap-0 {
+    gap: calc(var(--spacing) * 0);
+  }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
@@ -225,6 +260,9 @@
       margin-block-end: calc(calc(var(--spacing) * 5) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
+  }
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
@@ -235,6 +273,9 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -244,14 +285,17 @@
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
   }
-  .pt-24 {
-    padding-top: calc(var(--spacing) * 24);
-  }
   .pt-32 {
     padding-top: calc(var(--spacing) * 32);
   }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
   .text-center {
     text-align: center;
+  }
+  .text-\[10px\] {
+    font-size: 10px;
   }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
@@ -326,6 +370,22 @@ h4 {
   position: relative;
   left: 70%;
   bottom: 70%;
+}
+.cityCard {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: #e0e2f8;
+}
+.cardText {
+  position: relative;
+  bottom: 5em;
+  width: 65%;
+  background-color: white;
+  padding-bottom: 7%;
+  padding-top: 7%;
 }
 @property --tw-space-y-reverse {
   syntax: "*";
