@@ -50,31 +50,46 @@ h4{
     border-radius: 1em;
     height: 3em;
 }
-.subHead{
-    font-size: 2.5em;
-}
-.card{
-    display: flex;
-    flex-direction: column;
-    width:65%;
-    align-items: center;
-    gap: 20px;
-}
-.sqrCarve{
+ .card{
+        display: flex;
+        flex-direction: column;
+         width:80%;
+        align-items: center;
+        margin:auto;
+        gap: 20px;
+        z-index: 10;
+    }
+
+/* media query */
+/* mobile screen */
+@media screen and (min-width:0em) {
+    .card{
+        display: flex;
+        flex-direction: column;
+         width:80%;
+        align-items: center;
+        gap: 20px;
+    }
+    .sqrCarve{
     mask-image: radial-gradient(circle at top right, transparent 85px, black 51px);
     -webkit-mask-image: radial-gradient(circle at top right, transparent 85px, black 51px);
     position: relative;
-    left: 70%;
-    bottom: 40%;
+   left: 40%;
 }
-.cityCard{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 5px 5px 5px #e0e2f836;
-    /* background-color: rgba(0, 0, 255, 0.406); */
+.subHead{
+    font-size: 2em;
+}
+}
+
+/* desktop screen */
+
+@media screen and (min-width:25em) {
+     .sqrCarve{
+         left: 70%;
+    bottom: 40%;
+     }
+.subHead{
+    font-size: 2.5em;
 }
 .cardText{
     position: relative;
@@ -86,7 +101,9 @@ h4{
     text-align: left;
     border-radius: 0.1em;
     box-shadow: -2px 0px 200px rgba(128, 128, 128, 0.325);
-    
+}
+.caard{
+    width:65%;
 }
 .paddingcity{
     padding-top: 5%;
@@ -109,4 +126,7 @@ h4{
 }
 .editWidth{
     width: 22.7em;
+}
+
+
 }
